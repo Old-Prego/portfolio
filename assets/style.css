@@ -4,11 +4,13 @@
     padding: 0;
 }
 
+/* Sets general font and background color */
 body {
     font-family: sans-serif;
     background-color: #b8e4ff;
 }
 
+/* Sets up the navbar to fill up the top of the screen and spaces the links out evenly. */
 nav {
     display:flex;
     justify-content:space-around;
@@ -33,6 +35,7 @@ nav a {
     flex-direction:column;
 }
 
+/* Properly formats the main header and gives it a bit of extra space */
 #name {
     margin-top:2%;
     margin-bottom:2%;
@@ -46,6 +49,7 @@ nav a {
     flex-wrap:wrap;
 }
 
+/* Applies settings to all background images of the work section, making sure they sit correctly in the background and are blurred out until hovered on. */
 #work article .backgroundImage{
     border-style:solid;
     height:30em;
@@ -60,6 +64,7 @@ nav a {
     border-radius:5%;
 }
 
+/* Applies general styling and makes sure that the paragraphs don't look like links. */
 #work article p{
     color:black;
     text-align:center;
@@ -68,8 +73,8 @@ nav a {
     width:80%;
 }
 
+/* Gives the work articles a very slight gradient to make them stand out. */
 #work article{
-    /* background-color:#9bd9ff; */
     background:radial-gradient(#55b7f5,#b8e4ff);
     border-radius:5%;
     padding-bottom:2%;
@@ -103,6 +108,7 @@ nav a {
     background-image:url("images/gab.png");
 }
 
+/* The below pseudo-classes make the background images become clear when hovering. */
 #webDev .backgroundImage:hover{
     filter:blur(0px);
 }
@@ -115,6 +121,7 @@ nav a {
     filter:blur(0px);
 }
 
+/* This anchor tag surrounding the work articles turns the entire article into a link. */
 article a{
     display:block;
     text-decoration:none;
@@ -130,6 +137,7 @@ article a{
     background-color:#92b0e9;
 }
 
+/* Lines up the contact links horizontally and spaces them out a bit. */
 #contactMe{
     display:flex;
     flex-direction:row;
@@ -139,7 +147,7 @@ article a{
 }
 
 #contactMe p{
-    width:8%;
+    width:9%;
     margin:1%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
