@@ -6,7 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background-color: lightskyblue;
+    background-color: #b8e4ff;
 }
 
 nav {
@@ -14,17 +14,17 @@ nav {
     justify-content:space-around;
     align-items:center;
     height:50px;
-    background-color:cornflowerblue;
+    background-color:#92b0e9;
 }
 
 nav a {
     text-decoration:none;
-    font-size:36px;
-    border-style:solid;
-    border-color: black;
-    width:25%;
+    font-size:24px;
+    width:23%;
     text-align:center;
-    height:50px;
+    height:26px;
+    margin:1px;
+    color:#00d9ff;
 }
 
 #container {
@@ -42,11 +42,18 @@ nav a {
 #work {
     padding-top:20px;
     width:40%;
+    flex-direction:row;
+    flex-wrap:wrap;
 }
 
 #work article{
     border-style:solid;
     height:30em;
+    margin:5%;
+}
+
+#work h1{
+    text-align:center;
 }
 
 #aboutMe {
@@ -55,4 +62,34 @@ nav a {
 }
 #aboutMe h2{
     margin:10px;
+}
+
+#contactMe{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: center;
+    margin:20px;
+}
+
+#contactMe p{
+    width:8%;
+    margin:1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align:center;
+    font-size:20px;
+    border-style:solid;
+    color:#00d9ff;
+    background-color:#92b0e9;
+}
+
+#contactMe a{
+    text-decoration:none;
+    color:#00d9ff;
+}
+
+#portrait {
+    padding-bottom:20px;
+    width:50%
 }
