@@ -1,15 +1,58 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: sans-serif;
+    background-color: lightskyblue;
 }
 
 nav {
-
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    background-color:cornflowerblue;
 }
 
 nav a {
     text-decoration:none;
+    font-size:36px;
+    border-style:solid;
+    border-color: black;
+    width:25%;
+    text-align:center;
+    height:50px;
+}
+
+#container {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+#name {
+    margin-top:2%;
+    margin-bottom:2%;
+    font-size:48px;
+}
+
+#work {
+    padding-top:20px;
+    width:40%;
+}
+
+#work article{
+    border-style:solid;
+    height:30em;
+}
+
+#aboutMe {
+    text-align:center;
+    width:50%;
+}
+#aboutMe h2{
+    margin:10px;
 }
