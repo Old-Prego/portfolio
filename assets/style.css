@@ -63,7 +63,16 @@ nav a {
 #work article p{
     color:black;
     text-align:center;
-    margin-top:2%;
+    margin: auto;
+    padding-top:1%;
+    width:80%;
+}
+
+#work article{
+    /* background-color:#9bd9ff; */
+    background:radial-gradient(#55b7f5,#b8e4ff);
+    border-radius:5%;
+    padding-bottom:2%;
 }
 
 #work a{
@@ -115,6 +124,7 @@ article a{
     text-align:center;
     width:50%;
 }
+
 #aboutMe h2{
     margin:10px;
     background-color:#92b0e9;
@@ -146,8 +156,9 @@ article a{
 
 #contactHeader{
     background-color:#92b0e9;
-    width:50%;
+    width:40%;
     text-align:center;
+    margin-top:2%;
 }
 
 #portrait {
