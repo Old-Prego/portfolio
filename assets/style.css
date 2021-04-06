@@ -5,36 +5,32 @@
 }
 
 :root{
-    --light: #b8e4ff;
     --lBlue: #92b0e9;
     --dTeal: #00d9ff;
     --linkBlue: #0066ff;
     --blueGreen: #55b7f5;
+    --bgLight: #b8e4ff;
 }
 
 /* Sets general font and background color */
 body {
     font-family: "Roboto Condensed", sans-serif;
-    background: radial-gradient(white, var(--light));
+    background: radial-gradient(white, var(--bgLight));
 }
 
 /* Sets up the navbar to fill up the top of the screen and spaces the links out evenly. */
 nav {
-    height:50px;
     background-color:var(--lBlue);
 }
 
 nav a {
     text-decoration:none;
     font-size:24px;
-    width:23%;
-    height:26px;
-    margin:1px;
     color:var(--linkBlue);
     font-weight: bold;
 }
 
-#container {
+#container, #webCont{
     display:flex;
     align-items:center;
     flex-direction:column;
@@ -47,7 +43,7 @@ nav a {
     font-size:48px;
 }
 
-#work {
+#work, #webDevWork{
     padding-top:20px;
     width:50%;
     flex-direction:row;
@@ -55,7 +51,7 @@ nav a {
 }
 
 /* Applies settings to all background images of the work section, making sure they sit correctly in the background and are blurred out until hovered on. */
-#work article .backgroundImage{
+#work article .backgroundImage, #webDevWork article .backgroundImage{
     border-style:solid;
     height:30em;
     margin:0% 5% 2.5% 5%;
@@ -64,13 +60,13 @@ nav a {
     background-size:cover;
     filter:blur(2px);
     border-style:solid;
-    border-color:#b8e4ff;
+    border-color:var(--bgLight);
     border-width:10px;
     border-radius:5%;
 }
 
 /* Applies general styling and makes sure that the paragraphs don't look like links. */
-#work article p{
+#work article p, #webDevWork article p{
     color:black;
     text-align:center;
     margin: auto;
@@ -79,25 +75,25 @@ nav a {
 }
 
 /* Gives the work articles a very slight gradient to make them stand out. */
-#work article{
-    background:radial-gradient(var(--blueGreen),#b8e4ff);
+#work article, #webDevWork article{
+    background:radial-gradient(var(--blueGreen),var(--bgLight));
     border-radius:5%;
     padding-bottom:2%;
 }
 
-#work a{
+#work a, #webDevWork a{
     text-decoration:none;
 }
 
-#work h1{
+#work h1, #webDevWork h1{
     background-color: var(--lBlue);
 }
 
-#work h1, h3{
+#work h1, #work h3, #webDevWork h1, #webDevWork h3{
     text-align:center;
 }
 
-#work h3{
+#work h3, #webDevWork h3{
     margin-top:4%;
 }
 
@@ -113,6 +109,20 @@ nav a {
     background-image:url("images/gab.png");
 }
 
+#petAdoption .backgroundImage{
+    background-image:url("images/petAdoption.png");
+}
+
+#weather .backgroundImage{
+    background-image:url("images/weather.png");
+    background-size: contain;
+    background-position: center;
+}
+
+#quiz .backgroundImage{
+    background-image:url("images/quiz.png");
+}
+
 /* The below pseudo-classes make the background images become clear when hovering. */
 #webDev .backgroundImage:hover{
     filter:blur(0px);
@@ -123,6 +133,18 @@ nav a {
 }
 
 #gab .backgroundImage:hover{
+    filter:blur(0px);
+}
+
+#petAdoption .backgroundImage:hover{
+    filter:blur(0px);
+}
+
+#weather .backgroundImage:hover{
+    filter:blur(0px);
+}
+
+#quiz .backgroundImage:hover{
     filter:blur(0px);
 }
 
